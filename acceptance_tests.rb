@@ -4,7 +4,7 @@ require "open3"
 
 # Run some simple smoke tests against the packaged app.
 
-#`gradle clean check jar`
+`gradle clean check jar`
 
 def check(message, input, expected)
    cmd = "java -jar build/libs/robot19-0.1-SNAPSHOT.jar"
