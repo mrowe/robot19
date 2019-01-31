@@ -1,5 +1,7 @@
 package com.mojain.robot19;
 
+import com.mojain.robot19.commands.*;
+
 import java.util.HashMap;
 import java.util.Map;
 

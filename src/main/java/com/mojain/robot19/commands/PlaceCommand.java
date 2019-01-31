@@ -1,4 +1,6 @@
-package com.mojain.robot19;
+package com.mojain.robot19.commands;
+
+import com.mojain.robot19.*;
 
 public class PlaceCommand implements Command {
     private final int x;

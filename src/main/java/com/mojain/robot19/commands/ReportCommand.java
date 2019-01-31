@@ -1,4 +1,7 @@
-package com.mojain.robot19;
+package com.mojain.robot19.commands;
+
+import com.mojain.robot19.Command;
+import com.mojain.robot19.Robot;
 
 public class ReportCommand implements Command {
     @Override
