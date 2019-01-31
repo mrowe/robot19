@@ -19,7 +19,7 @@ public class Parser {
             return COMMANDS.get(input);
         }
         if (input.startsWith(PLACE)) {
-            String args = input.substring(PLACE.length()).strip();
+            String args = input.substring(PLACE.length()).trim();
             String[] parts = args.split(",", 3);
             try {
                 int x = Integer.parseInt(parts[0]);
