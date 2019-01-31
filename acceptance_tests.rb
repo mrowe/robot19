@@ -19,9 +19,17 @@ end
 
 ############# EXAMPLES #############
 
-check "example 0",
-  [""],
-  ["Hello, world"]
+check "example 1",
+  ["PLACE 0,0,NORTH", "MOVE", "REPORT"],
+  ["0,1,NORTH"]
+
+check "example 2",
+  ["PLACE 0,0,NORTH", "LEFT", "REPORT"],
+  ["0,0,WEST"]
+
+check "example 3",
+  ["PLACE 1,2,EAST", "MOVE", "MOVE", "LEFT", "MOVE", "REPORT"],
+  ["3,3,NORTH"]
 
 ####################################
 
