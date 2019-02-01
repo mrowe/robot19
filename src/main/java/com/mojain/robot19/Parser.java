@@ -23,14 +23,10 @@ public class Parser {
         if (input.startsWith(PLACE)) {
             String args = input.substring(PLACE.length()).trim();
             String[] parts = args.split(",", 3);
-            try {
-                int x = Integer.parseInt(parts[0]);
-                int y = Integer.parseInt(parts[1]);
-                Direction f = Direction.valueOf(parts[2]);
-                return new PlaceCommand(x, y, f);
-            } catch (Throwable t) {
-                throw new RuntimeException(t);
-            }
+            int x = Integer.parseInt(parts[0]);
+            int y = Integer.parseInt(parts[1]);
+            Direction f = Direction.valueOf(parts[2]);
+            return new PlaceCommand(x, y, f);
         }
         // default to NOOP Command
         return robot -> robot;
